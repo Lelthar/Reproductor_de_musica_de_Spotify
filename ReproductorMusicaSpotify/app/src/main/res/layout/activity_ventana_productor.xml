@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gerald.reproductormusicaspotify.ventana_productor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#424242"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <SeekBar
+            android:id="@+id/seekBarProgreso"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/textViewVolumen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:min="0" />
+
+        <SeekBar
+            android:id="@+id/seekBarVolumen"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/seekBarProgreso"
+            android:layout_marginBottom="128dp"
+            android:min="0" />
+
+        <TextView
+            android:id="@+id/textViewProgreso"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/textViewVolumen"
+            android:layout_alignStart="@+id/textViewVolumen"
+            android:layout_marginBottom="57dp"
+            android:text="Progreso"
+            android:textColor="#F5F5F5"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textViewVolumen"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/seekBarVolumen"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:text="Volumen"
+            android:textColor="#F5F5F5"
+            android:textSize="24sp"
+            tools:text="Volumen" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="22dp"
+            android:onClick="onClickedPlay" />
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/button"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@+id/textViewVolumen"
+            android:onClick="anterior_cancion" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignTop="@+id/button"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/textViewVolumen"
+            android:onClick="siguiente_cancion" />
+
+        <TextView
+            android:id="@+id/textViewCancion"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="33dp"
+            android:textAlignment="center"
+            android:textColor="#F5F5F5"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

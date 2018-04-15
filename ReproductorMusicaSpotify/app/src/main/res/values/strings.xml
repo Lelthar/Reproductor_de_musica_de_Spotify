@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ReproductorMusicaSpotify</string>
+    <string name="title_activity_reproductor_ventana">reproductor_ventana</string>
+</resources>
